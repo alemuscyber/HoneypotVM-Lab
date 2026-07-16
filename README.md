@@ -18,6 +18,8 @@ Step 5: Creating our Log Analytics Workspace
 The value of this lab, asides from the honeypot itself, is not having to directly access the VM to review the internal security logs. These logs can actually be forwarded and centralized in Azures Log Analytics Workplace. For this, I installed Windows Security Events solution which uses both AMA (Azure Monitor Agent) and a Legacy Agent. After installing the solutions I established the connection from the VM to the workspace, this can only happen by creating a DCR (Data Collection Rule) and link it to the resource group. I configured the rule to stream *all security events*.  Once this is done, the connection is now succesful. You can verify the stream and storage of security events using KQL in the Log Analytics Workspace. Here's an example of a query:
 
 Step 6: Is this a SIEM yet?
+No, not yet. We can't call a Log Repository a SIEM by simply querying raw data. So I turned this data into valuable information. Also, a SIEMs purpose is to enhance visibility, a single pane of glass, of security events that have been previously filtered to reduce inaccuracy. I created a Microsoft Sentinel Workspace and linked it to my Log Analytics Workspace. Then, to bring actual value, I uploaded a D.B ("geoip-summarized.csv") of more than 50k records in order to correlate the attackers IP addresses of my security events to cityname and countryname. Here's an example of a query to validate succesful correlation:
+
 
 
 
