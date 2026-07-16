@@ -40,7 +40,7 @@ No, not yet. We can't call a Log Repository a SIEM by simply collecting and quer
 
 Step 7: Building my SIEM with MS Sentinel
 
-As I said, the purpose of a SIEM is to enhance visibility. This is done by gathering valuable insights and creating graphs/charts/kpis/etc.
+As I said, the purpose of a SIEM is to enhance security visibility. This is done by gathering valuable insights, creating graphs/charts/kpis/etc, and centralizing them in a single pane of glass (dashboard).
 
 *My final product looks like this:*
 
