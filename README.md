@@ -17,6 +17,8 @@ Step 3: Modifying the Security Group of the VM
 
 I assigned an inbound rule to allow any for Port, Protocol, Souce, Destination. This makes our VM reachable and vulnerable over the virtual network. To ensure reachability I sent icmp pings to the VMs ip and got succesfull replies.
 
+![Image Alt](https://github.com/alemuscyber/HoneypotVM/blob/3b995e07f23c23760adaaba751ead4a2c66ffe97/Screenshot%202026-07-15%20172344.png)
+
 Step 4: Accesing the VM and disabling all FW policies
 
 This makes our VM highly vulnerable and attractive for potential attackers. For this lab, I turned off the FW for all profiles (Domain, Private, Public).
