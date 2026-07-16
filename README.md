@@ -36,6 +36,8 @@ Step 6: Is this a SIEM yet?
 
 No, not yet. We can't call a Log Repository a SIEM by simply querying raw data. So I turned this data into valuable information. Also, a SIEMs purpose is to enhance visibility, a single pane of glass, of security events that have been previously filtered to reduce inaccuracy and avoid noise. I created a Microsoft Sentinel Workspace and linked it to my Log Analytics Workspace. Then, to bring actual value, I uploaded a D.B ("geoip-summarized.csv") of more than 50k records in order to correlate the attackers IP addresses of my security events to cityname and countryname. Here's an example of a query to validate succesful correlation:
 
+![Image Alt](https://github.com/alemuscyber/HoneypotVM/blob/08396fe1c2d38a6ed8c46987e2fc3e15d8f4e581/Screenshot%202026-07-15%20174658.png)
+
 Step 7: Building my SIEM with MS Sentinel
 
 As I said, the purpose of a SIEM is to enhance visibility. This is done by gathering valuable insights and creating graphs/charts/kpis/etc.
